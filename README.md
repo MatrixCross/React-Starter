@@ -1,37 +1,21 @@
 # Farm + React
 
-This template should help you start developing using React and TypeScript in Farm.
+快速的创建一个 React 应用程序。
 
-## Setup
+## 特性
 
-Install the dependencies:
+- ⚡️ [Farm](https://farm-fe.github.io/zh/) - 极致的速度！
 
-```bash
-pnpm install
-```
+- 📦 [Resso](https://github.com/nanxiaobei/resso) - 世界上最简单的状态管理，极致的智能，极致的轻巧！
 
-## Get Started
+- 🎨 [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎，且支持各种图标库
 
-Start the dev server:
+- 🌍 [react-i18next](https://react.i18next.com/) - I18n 国际化开箱即用
 
-```bash
-pnpm start
-```
+- [Arco Design](https://www.arco.design/) - 字节跳动出品的企业级组件库，优雅、灵活、美观
 
-Build the app for production:
+## 待添加
 
-```bash
-pnpm build
-```
-
-Preview the Production build product:
-
-```bash
-pnpm preview
-```
-
-Clear persistent cache local files
-
-```bash
-pnpm clean
-```
+- [ ] 封装请求
+- [ ] 封装布局
+- [ ] 封装路由

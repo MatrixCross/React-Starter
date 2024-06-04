@@ -16,7 +16,7 @@ export default defineConfig({
     },
   },
   vitePlugins: [vitePluginForArco(), autoImport({
-    imports: ['react', 'react-i18next', 'react-router', 'ahooks'],
+    imports: ['react', 'react-i18next', 'react-router-dom', 'ahooks'],
     dts: 'src/typings/autoImport.d.ts',
   })],
   plugins: ['@farmfe/plugin-react', '@farmfe/plugin-sass', visualizer({}), postcss(), less()],

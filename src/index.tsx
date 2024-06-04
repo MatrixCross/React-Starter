@@ -11,7 +11,9 @@ setupI18n()
 const container = document.querySelector('#root')
 const root = createRoot(container!)
 
-root.render(<Main />)
+root.render(
+  <Main />,
+)
 
 // 默认支持indexeddb和typescript，
 // 不支持indexeddb会自动降级到localstorage，

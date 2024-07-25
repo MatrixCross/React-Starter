@@ -15,9 +15,39 @@ export default defineConfig({
       },
     },
   },
-  vitePlugins: [vitePluginForArco(), autoImport({
-    imports: ['react', 'react-i18next', 'react-router-dom', 'ahooks'],
-    dts: 'src/typings/autoImport.d.ts',
-  })],
-  plugins: ['@farmfe/plugin-react', '@farmfe/plugin-sass', visualizer({}), postcss(), less()],
+  vitePlugins: [
+    vitePluginForArco(),
+    autoImport({
+      imports: ['react', 'react-i18next', 'react-router-dom', 'ahooks'],
+      dts: 'src/typings/autoImport.d.ts',
+    }),
+  ],
+  plugins: [
+    '@farmfe/plugin-react',
+    [
+      '@farmfe/plugin-react-components',
+      {
+        dts: true,
+        filename: 'src/typings/components.d.ts',
+        resolvers: [
+          {
+            module: '@arco-design/web-react',
+            prefix: 'Arco',
+            import_style: true,
+          },
+        ],
+      },
+    ],
+    '@farmfe/plugin-sass',
+    [
+      '@farmfe/plugin-icons',
+      {
+        autoInstall: true,
+        compiler: 'jsx',
+      },
+    ],
+    visualizer({}),
+    postcss(),
+    less(),
+  ],
 })

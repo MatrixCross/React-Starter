@@ -1,1 +1,6 @@
-export * as demo from './demo.ts'
+import { en, zh } from './demo.ts'
+
+export default {
+  en,
+  zh,
+}

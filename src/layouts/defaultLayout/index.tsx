@@ -1,7 +1,7 @@
 import './index.css'
 import { Outlet } from 'react-router-dom'
 import FarmLogo from '@/assets/logo.png'
-import reactLogo from '@/assets/react.svg'
+import IconReact from '~icons/logos/react'
 
 export default function DefaultLayout() {
   return (
@@ -11,7 +11,7 @@ export default function DefaultLayout() {
           <img src={FarmLogo} className="h-100px w-100px" alt="Farm logo" />
         </a>
         <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
-          <img src={reactLogo} className="h-100px w-100px animate-spin animate-duration-2000" alt="React logo" />
+          <IconReact className="animate-spin animate-duration-2000 text-100px text-#00D8FF" alt="React logo" />
         </a>
         <a href="https://github.com/MatrixCross/React-Starter" target="_blank" rel="noopener noreferrer">
           <div className="i-line-md-github-loop text-100px"></div>

@@ -1,4 +1,3 @@
-import { Button, Input } from '@arco-design/web-react'
 import store from '@/store'
 import { toggleTheme } from '@/utils/theme.ts'
 
@@ -23,8 +22,8 @@ export function Component() {
         </p>
       </div>
       <div className="flex justify-between">
-        <Button onClick={toggleTheme}>change theme</Button>
-        <Button onClick={toggleLanguage}>{t('switch language')}</Button>
+        <ArcoButton onClick={toggleTheme}>change theme</ArcoButton>
+        <ArcoButton onClick={toggleLanguage}>{t('switch language')}</ArcoButton>
       </div>
       <Nav />
     </>
@@ -34,11 +33,11 @@ export function Component() {
 function Counter() {
   const { count, inc } = store
   return (
-    <Button onClick={inc}>
+    <ArcoButton onClick={inc}>
       count is
       {' '}
       {count}
-    </Button>
+    </ArcoButton>
   )
 }
 
@@ -52,8 +51,8 @@ function Nav() {
   }
   return (
     <div className="mt-20px flex">
-      <Input placeholder="type and go" value={name} onChange={setName} />
-      <Button onClick={go} className="ml-20px">Go!</Button>
+      <ArcoInput placeholder="type and go" value={name} onChange={setName} />
+      <ArcoButton onClick={go} className="ml-20px">Go!</ArcoButton>
     </div>
   )
 }

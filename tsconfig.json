@@ -13,6 +13,7 @@
       "@/*": ["./src/*"]
     },
     "resolveJsonModule": true,
+    "types": ["@farmfe/plugin-icons/types/react"],
     "allowImportingTsExtensions": true,
 
     /* Linting */

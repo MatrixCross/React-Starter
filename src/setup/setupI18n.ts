@@ -1,6 +1,6 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
-import { demo } from '../locales'
+import demo from '../locales'
 
 export default function (lng: string = 'en') {
   i18n

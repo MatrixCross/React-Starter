@@ -28,6 +28,7 @@ export default defineConfig({
       '@farmfe/plugin-react-components',
       {
         dts: true,
+        dirs: ['src/components'],
         filename: 'src/typings/components.d.ts',
         resolvers: [
           {

@@ -36,7 +36,7 @@
     "@farmfe/js-plugin-visualizer": "^1.0.0",
     "@farmfe/plugin-icons": "^0.0.2",
     "@farmfe/plugin-react": "^1.2.0",
-    "@farmfe/plugin-react-components": "^1.0.1",
+    "@farmfe/plugin-react-components": "^1.0.3",
     "@farmfe/plugin-sass": "^1.1.0",
     "@iconify/json": "^2.2.230",
     "@types/react": "^18.3.3",

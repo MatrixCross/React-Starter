@@ -7,6 +7,7 @@ export function Component() {
   return (
     <>
       <Counter />
+      {/* <TextComp1 /> */}
       <div>
         <p>
           count is
